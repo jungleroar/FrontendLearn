@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+.ads {
+/* Style for "Прямоуголь" */
+    width: 300px;
+    min-height: 462px;
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 35px;
+    /* margin: auto; */
+}
+
+.tarif {
+/* Style for "Тариф мини" */
+    height: 16px;
+    color: #212121;
+    font-family: "Museo Sans Cyrl -300";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    /* Text style for "Тариф мини" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 35px;
+}
+
+.price {
+/* Style for "9 000" */
+    height: 36px;
+    color: #5ba2a9;
+    font-family: "Museo Sans Cyrl -500";
+    font-size: 48px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    /* Text style for "9,  000" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+
+.price span {
+/* Style for "руб." */
+    height: 17px;
+    color: #5ba2a9;
+    font-family: "Museo Sans Cyrl -300";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    /* Text style for "руб." */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    display: inline-block;
+}
+
+.description {
+/* Style for "Шары 30 шт" */
+    /* width: 201px; */
+    height: 114px;
+    color: #454545;
+    font-family: "Museo Sans Cyrl -300";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    /* Text style for "Шары 30 шт" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 47px;
+}
+
+.button {
+/* Style for "Прямоуголь" */
+    /* width: 200px; */
+    height: 54px;
+    border: 2px solid #e8e8e8;
+    background-color: #ffffff;
+    /* Style for "Заказать у" */
+    font-family: "Museo Sans Cyrl -700";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "З, аказать" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
