@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.header {
+/* Style for "header-bg" */
+    background-color: #f1f1f1;
+    padding: 22px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.nav-link {
+    color: #202020;
+    /* font-family: Tahoma; */
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.login {
+    color: #202020;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+/* Main section */
+.hero {
+    padding-top: 62px;
+    padding-bottom: 71px;
+}
+.hero-container {
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+    align-items: center;
+}
+.hero-image {
+    margin-right: 122px;
+}
+.author {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 22px;
+    display: block;
+}
+.title {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 48px;
+    display: block; 
+}
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 49px;
+}
+.info-text{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.price {
+    display: flex;
+    margin-bottom: 48px;
+}
+.pricetag {
+    font-weight: 400;
+    font-size: 55px;
+    margin-right: 64px;
+}
+.favorites {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: inherit;
+}
+.button {
+    font-size: 16px;
+    font-weight: 700;
+    /* padding: 22px 50px; */
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.button-primary {
+    border: 2px solid transparent;
+    background-color: #f89c02;
+    color: #f1f1f1;
+    border-radius: 5px;
+    padding: 22px 50px;
+    margin-right: 20px;
+}
+.button-outline {
+    color: #f89c02;
+    border: 2px solid #f89c02;
+    padding: 22px 50px;
+    text-decoration: none;
+    border-radius: 5px;
+}
