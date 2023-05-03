@@ -122,3 +122,95 @@ body {
     text-decoration: none;
     border-radius: 5px;
 }
+
+/* About section */
+
+.about {
+    background-color: #f1f1f1;
+}
+
+.about-container {
+    display: flex;
+    padding-top: 90px; 
+    padding-bottom: 90px;
+    justify-content: space-around;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.annotation {
+    max-width: 50%;
+    margin-right: 130px;
+}
+
+.about-author {
+    max-width: 50%;
+    background-color: white;
+    padding: 60px 60px 60px 60px;
+    border-radius: 10px;
+}
+
+.photo-name {
+    display: flex;
+    max-width: 337px;
+}
+
+.author-photo {
+    margin-right: 21px;
+}
+
+.author-url {
+    font-size: 12px;
+}
+
+/* Readers section */
+
+.readers-container {
+    max-width: 1140px;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+
+.readers-title {
+    margin-bottom: 57px;
+}
+
+.reader-photo {
+    max-width: 165px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.photo-readers-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Footer */
+
+.footer {
+/* Style for "footer-bg" */
+    background-color: #f1f1f1;
+    padding: 60px 90px;
+}
+
+.footer-container {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.to-up {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.to-up-button {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
