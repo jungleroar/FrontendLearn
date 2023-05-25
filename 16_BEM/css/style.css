@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Mulish', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+
+/* Header section */
+
+.header {
+    position: fixed;
+    width: 100%;
+}
+.navtop {
+    height: 120px;
+    width: 1440px;
+    display: flex;
+
+}
+.navbot {
+    height: 80px;
+    background-color: #0A223D;
+}
+.logo {
+    width: 177px;
+    height: 24px;
+    left: 165px;
+    top: 51px;
+    position: absolute;
+}
+.navtop search{
+    position: absolute;
+    width: 350px;
+    height: 40px;
+    left: 450px;
+    top: 40px;
+}

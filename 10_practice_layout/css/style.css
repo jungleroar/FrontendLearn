@@ -3,13 +3,22 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
 }
 
 .header {
 /* Style for "header-bg" */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     background-color: #f1f1f1;
     padding: 22px 0;
+    z-index: 999;
 }
 
 .header-container {
@@ -50,10 +59,29 @@ body {
     max-width: 1140px;
     margin: auto;
     align-items: center;
+    margin-top: 60px;
 }
-.hero-image {
+.hero-book {
     margin-right: 122px;
+    position: relative;
 }
+.sale-badge {
+    width: 120px;
+    height: 60px;
+    background-color: rebeccapurple;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+
+}
+
 .author {
     font-size: 24px;
     font-weight: 400;
@@ -87,6 +115,7 @@ body {
 .price {
     display: flex;
     margin-bottom: 48px;
+    align-items: center;
 }
 .pricetag {
     font-weight: 400;
@@ -138,6 +167,10 @@ body {
     margin: auto;
 }
 
+.about-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
 .annotation {
     max-width: 50%;
     margin-right: 130px;
@@ -180,6 +213,7 @@ body {
     max-width: 165px;
     margin: auto;
     margin-bottom: 30px;
+    border-radius: 50%;
 }
 
 .photo-readers-container {
@@ -196,6 +230,7 @@ body {
 }
 
 .footer-container {
+    /* position: relative; */
     max-width: 1140px;
     display: flex;
     justify-content: space-between;
@@ -205,12 +240,276 @@ body {
 
 .to-up {
     display: flex;
-    flex-direction: column-reverse;
-}
-
-.to-up-button {
+    /* flex-direction: column-reverse; */
+    /* position: fixed; */
+    bottom: 0;
+    right: 0;
     width: 50px;
     height: 50px;
     background-color: white;
     border-radius: 5px;
+}
+
+.to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.to-top img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 1200px) {
+    .header-container,
+    .hero-container,
+    .about-container,
+    .readers-container,
+    .footer-container {
+        max-width: 960px;
+    }
+    .hero-book {
+        margin-right: 30px;
+        min-width: 390px;
+        max-width: 390px;
+    }
+    .annotation {
+        margin-right: 52px;
+    }
+    .reader-photo {
+        margin-bottom: 25px;
+    }
+   
+}
+
+@media (max-width: 992px) {
+    .header-container,
+    .hero-container,
+    .about-container,
+    .readers-container,
+    .footer-container {
+        max-width: 752px;
+    }
+    .nav-link {
+        display: none;
+    }
+
+    .hero-book {
+        margin-right: 30px;
+        min-width: 298px;
+        max-width: 298px;
+    }
+    .sale-badge {
+        width: 90px;
+        height: 40px;
+    }
+    .author {
+        height: 20px;
+        font-size: 22px;
+        margin-bottom: 13px;
+    }
+    .title {
+        height: 44px;
+        font-size: 46px;
+        margin-bottom: 10px;
+    }
+    .subtitle {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .info {
+        margin-bottom: 30px;
+    }
+    .info-text {
+        font-size: 16px;
+    }
+    .price {
+        margin-bottom: 30px;
+    }
+    .pricetag {
+        font-size: 46px;
+    }
+    .button-primary {
+        margin-right: 20px;
+        padding: 17px 40px;
+    }
+
+    .button-outline {
+        padding: 17px 40px;
+    }
+
+    /* About section */
+
+    .about-container {
+        max-width: 728px;
+        flex-direction: column;
+    }
+
+    .about-title {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .annotation {
+        max-width: 100%;
+        margin-bottom: 62px;
+    }
+
+    .about-author {
+        min-width: 552px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header-container,
+    .about-container,
+    .readers-container,
+    .footer-container {
+        max-width: 560px;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .hero-container {
+        max-width: 560px;
+        flex-direction: column;
+    }
+    .hero-book {
+        min-width: 462px;
+        max-width: 462px;
+        margin-bottom: 60px;
+    }
+
+    .sale-badge {
+        width: 90px;
+        height: 40px;
+    }
+
+    .author {
+        height: 20px;
+        font-size: 22px;
+        margin-bottom: 13px;
+    }
+
+    .title {
+        height: 44px;
+        font-size: 46px;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .info {
+        margin-bottom: 28px;
+        flex-wrap: wrap;
+ 
+    }
+
+    .info-text {
+        font-size: 16px;
+    }
+
+    .price {
+        margin-bottom: 36px;
+    }
+
+    .pricetag {
+        font-size: 46px;
+    }
+
+    .button-primary {
+        margin-right: 20px;
+        padding: 17px 40px;
+    }
+
+    .button-outline {
+        padding: 17px 40px;
+    }
+
+    /* About section */
+
+    .about-container {
+        max-width: 520px;
+        flex-direction: column;
+    }
+
+    .about-title {
+        margin-top: 0;
+        margin-bottom: 28px;
+    }
+
+    .annotation {
+        max-width: 100%;
+        margin-bottom: 60px;
+        margin-right: 0;
+    }
+
+    .about-author {
+        min-width: 100%px;
+    }
+
+@media (max-width: 576px) {
+
+    .header-container,
+    .about-container,
+    .readers-container,
+    .footer-container {
+        max-width: 95%;
+    }
+
+    .nav-link {
+        display: none;
+    }
+    .header-container {
+        justify-content: space-between;
+    }
+    .hero-container {
+        max-width: 460px;
+        margin-top: 40px;
+    }
+
+    .hero-book {
+        min-width: 460px;
+        max-width: 460px;
+        margin-bottom: 60px;
+    }
+    .author {
+        font-size: 18px;
+    }
+    .title {
+        font-size: 36px;
+    }
+    .subtitle {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .info {
+        flex-direction: column;
+    }
+
+    .button-primary {
+        min-width: 100%;
+        padding: 22px 50px;
+        margin-bottom: 20px;
+    }
+
+    .button-outline {
+        display: inline-block;
+        min-width: 100%;
+        padding: 22px 50px;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    /* About section */
+}
+  
 }
