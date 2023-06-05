@@ -7,34 +7,67 @@ body {
 img {
     max-width: 100%;
 }
+.container {
+    width: 1140px;
+    margin: auto;
+}
 
 /* Header section */
 
-.header {
-    position: fixed;
-    width: 100%;
-}
-.navtop {
-    height: 120px;
-    width: 1440px;
+.header-top {
     display: flex;
+    justify-content: space-between;
+    height: 120px;
+    align-items: center;
+}
+.search {
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+.search__input {
+    width: 285px;
+    height: 40px;
+    border: 0;
 
 }
-.navbot {
+.search__button {
+    width: 65px;
+    height: 40px;
+    background-color: #EC1F46;
+    border: 0;
+}
+.user {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #0A223D;
+}
+.user__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+.user__name {
+    font-size: 14px;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
     height: 80px;
     background-color: #0A223D;
 }
-.logo {
-    width: 177px;
-    height: 24px;
-    left: 165px;
-    top: 51px;
-    position: absolute;
+.header-nav__menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-.navtop search{
-    position: absolute;
-    width: 350px;
-    height: 40px;
-    left: 450px;
-    top: 40px;
+.header-menu__item {
+    list-style: none;
+}
+.header-menu__link {
+    text-decoration: none;
+    color: white;
 }
