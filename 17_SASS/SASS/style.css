@@ -22,6 +22,9 @@ img {
   align-items: center;
   height: 120px;
 }
+.header-top__menu-button {
+  display: none;
+}
 
 .search {
   width: 350px;
@@ -440,5 +443,20 @@ template {
   }
   .user {
     display: none;
+  }
+  .header-top__menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 16px;
+    height: 11px;
+    border: none;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
   }
 }/*# sourceMappingURL=style.css.map */
